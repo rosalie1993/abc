@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+{% extends "base.html" %}
+{% block title %}Index Page{% endblock %}
+{% block content %}
+<div class="container-fluid">
+	<div class="jumbotron">
+		<ul>
+			{% for student in students %}
+			<li>
+				<p>{{ student }}</p>
+			</li>
+			{% endfor %}
+		</ul>
+	</div>
+</div>
+{% endblock %}
